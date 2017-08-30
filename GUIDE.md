@@ -1,10 +1,10 @@
-# Using the BitPay plugin for osCommerce
+# Using the GloBee plugin for osCommerce
 
 ## Prerequisites
 
 * Last Version Tested: 2.3.4
 
-You must have a BitPay merchant account to use this plugin.  It's free to [sign-up for a BitPay merchant account](https://bitpay.com/start).
+You must have a GloBee merchant account to use this plugin.  It's free to [sign-up for a GloBee merchant account](https://globee.com/).
 
 
 ## Installation
@@ -16,31 +16,30 @@ You must have a BitPay merchant account to use this plugin.  It's free to [sign-
 
 ## Configuration
 
-1. Create an API key at bitpay.com under My Account > API Access Keys
-2. In your osCommerce admin panel under Modules > Payment, install the "Bitcoin via BitPay" module
+1. Create an API key at globee.com under My Account > API Access Keys
+2. In your osCommerce admin panel under Modules > Payment, install the "Bitcoin via Globee" module
 3. Fill out all of the configuration information:
 	- Verify that the module is enabled.
 	- Copy/Paste the API key you created in step 1 into the API Key field
 	- Select a transaction speed. The high speed will send a confirmation as soon
       as a transaction is received in the bitcoin network (usually a few seconds).
       A medium speed setting will typically take 10 minutes. The low
-      speed setting usually takes around 1 hour. See the bitpay.com merchant
-      documentation for a full description of the transaction speed settings:
-      https://bitpay.com/downloads/bitpayApi.pdf
+      speed setting usually takes around 1 hour. See the globee.com merchant
+      documentation for a full description of the transaction speed settings.
 	- Choose a status for unpaid and paid orders (or leave the default values as
       defined).
 	- Verify that the currencies displayed corresponds to what you want and to
-      those accepted by bitpay.com (the defaults are what BitPay accepts as of
+      those accepted by globee.com (the defaults are what GloBee accepts as of
       this writing).
 	- Choose a sort order for displaying this payment option to visitors.
       Lowest is displayed first.
 
 ## Usage
 
-When a user chooses the "Bitcoin via BitPay" payment method, they will be
+When a user chooses the "Bitcoin via GloBee" payment method, they will be
 presented with an order summary as the next step (prices are shown in whatever
 currency they've selected for shopping). Upon confirming their order, the system
-takes the user to bitpay.com.  Once payment is received, a link is presented
+takes the user to globee.com.  Once payment is received, a link is presented
 to the shopper that will take them back to your website.
 
 In your Admin control panel, you can see the orders made via Bitcoins just as

@@ -25,10 +25,10 @@
  */
  
 // Text Messages
-define('MODULE_PAYMENT_BITPAY_TEXT_TITLE', 'Bitcoin via BitPay');
-define('MODULE_PAYMENT_BITPAY_TEXT_DESCRIPTION', 'Use bitpay.com\'s invoice processing server to automatically accept bitcoins.');
-define('MODULE_PAYMENT_BITPAY_TEXT_EMAIL_FOOTER', 'You have attempted to make an order using bitcoins via bitpay.com!');
+define('MODULE_PAYMENT_BITPAY_TEXT_TITLE', 'Bitcoin via GloBee');
+define('MODULE_PAYMENT_BITPAY_TEXT_DESCRIPTION', 'Use globee.com\'s invoice processing server to automatically accept bitcoins.');
+define('MODULE_PAYMENT_BITPAY_TEXT_EMAIL_FOOTER', 'You have attempted to make an order using bitcoins via globee.com!');
 
 // Error Messages
-define('MODULE_PAYMENT_BITPAY_BAD_CURRENCY', 'Currency not supported by bitpay.com.  Please choose another currency.');
-define('MODULE_PAYMENT_BITPAY_CREATE_INVOICE_FAILED', 'Unable to process payment using BitPay.  Please choose another form of payment.');
+define('MODULE_PAYMENT_BITPAY_BAD_CURRENCY', 'Currency not supported by globee.com.  Please choose another currency.');
+define('MODULE_PAYMENT_BITPAY_CREATE_INVOICE_FAILED', 'Unable to process payment using GloBee.  Please choose another form of payment.');

@@ -1,21 +1,21 @@
 {
-    "name": "bitpay/oscommerce",
-    "description": "BitPay payment plugin for osCommerce",
+    "name": "GloBee-Official/oscommerce",
+    "description": "GloBee payment plugin for osCommerce",
     "type": "oscommerce-plugin",
     "keywords": ["oscommerce","plugin","payment","ecommerce","bitcoin","bitpay","membership","wordpress"],
-    "homepage": "https://github.com/bitpay/oscommerce-plugin",
+    "homepage": "https://github.com/GloBee-Official/oscommerce-plugin",
     "license": "MIT",
     "support": {
-        "email": "support@bitpay.com",
-        "issues": "https://github.com/bitpay/oscommerce-plugin/issues",
-        "source": "https://github.com/bitpay/oscommerce-plugin"
+        "email": "support@globee.com",
+        "issues": "https://github.com/GloBee-Official/oscommerce-plugin/issues",
+        "source": "https://github.com/GloBee-Official/oscommerce-plugin"
     },
     "minimum-stability": "stable",
     "authors": [
         {
-            "name": "BitPay Integrations Development Team",
-            "email": "integrations@bitpay.com",
-            "homepage": "https://bitpay.com/integrations"
+            "name": "GloBee Integrations Development Team",
+            "email": "integrations@globee.com",
+            "homepage": "https://globee.com/integrations"
         }
     ],
     "require": {

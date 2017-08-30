@@ -266,9 +266,9 @@ class bitpay
     function install ()
     {
         tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, set_function, date_added) "
-            ."values ('Enable BitPay Module', 'MODULE_PAYMENT_BITPAY_STATUS', 'False', 'Do you want to accept bitcoin payments via bitpay.com?', '6', '0', 'tep_cfg_select_option(array(\'True\', \'False\'), ', now());");
+            ."values ('Enable BitPay Module', 'MODULE_PAYMENT_BITPAY_STATUS', 'False', 'Do you want to accept bitcoin payments via globee.com?', '6', '0', 'tep_cfg_select_option(array(\'True\', \'False\'), ', now());");
         tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added) "
-            ."values ('API Key', 'MODULE_PAYMENT_BITPAY_APIKEY', '', 'Enter you API Key which you generated at bitpay.com', '6', '0', now());");
+            ."values ('API Key', 'MODULE_PAYMENT_BITPAY_APIKEY', '', 'Enter you API Key which you generated at globee.com', '6', '0', now());");
         tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, set_function, date_added) "
             ."values ('Transaction Speed', 'MODULE_PAYMENT_BITPAY_TRANSACTION_SPEED', 'Low-6 Confirmations', 'At what speed do you want the transactions to be considered confirmed?', '6', '0', 'tep_cfg_select_option(array(\'High-0 Confirmations\', \'Medium-1 Confirmations\', \'Low-6 Confirmations\'),', now());");
         tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, set_function, use_function, date_added) "
@@ -276,7 +276,7 @@ class bitpay
         tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, set_function, use_function, date_added) "
             ."values ('Paid Order Status', 'MODULE_PAYMENT_BITPAY_PAID_STATUS_ID', '2', 'Automatically set the status of paid orders to this value.', '6', '0', 'tep_cfg_pull_down_order_statuses(', 'tep_get_order_status_name', now())");
         tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added) "
-            ."values ('Currencies', 'MODULE_PAYMENT_BITPAY_CURRENCIES', 'BTC, USD, EUR, GBP, AUD, BGN, BRL, CAD, CHF, CNY, CZK, DKK, HKD, HRK, HUF, IDR, ILS, INR, JPY, KRW, LTL, LVL, MXN, MYR, NOK, NZD, PHP, PLN, RON, RUB, SEK, SGD, THB, TRY, ZAR', 'Only enable BitPay payments if one of these currencies is selected (note: currency must be supported by bitpay.com).', '6', '0', now())");
+            ."values ('Currencies', 'MODULE_PAYMENT_BITPAY_CURRENCIES', 'BTC, USD, EUR, GBP, AUD, BGN, BRL, CAD, CHF, CNY, CZK, DKK, HKD, HRK, HUF, IDR, ILS, INR, JPY, KRW, LTL, LVL, MXN, MYR, NOK, NZD, PHP, PLN, RON, RUB, SEK, SGD, THB, TRY, ZAR', 'Only enable GloBee payments if one of these currencies is selected (note: currency must be supported by globee.com).', '6', '0', now())");
         tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, use_function, set_function, date_added) "
             ."values ('Payment Zone', 'MODULE_PAYMENT_BITPAY_ZONE', '0', 'If a zone is selected, only enable this payment method for that zone.', '6', '2', 'tep_get_zone_class_title', 'tep_cfg_pull_down_zone_classes(', now())");
         tep_db_query("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added) "
